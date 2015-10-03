@@ -12,13 +12,13 @@ angular.module('hubApp')
       templateUrl: 'items/dateTimeItem/dateTimeItemTile.html',
       restrict: 'E',
       link: function postLink(scope, element) {
-        // scope.currentDateTime = new Date();
 
         var timeoutId;
 
         function updateTime() {
           scope.currentDateTime = new Date();
         }
+
         element.on('$destroy', function() {
           $interval.cancel(timeoutId);
         });
@@ -28,6 +28,7 @@ angular.module('hubApp')
           updateTime(); // update DOM
         }, 1000);
 
+        updateTime();
       }
     };
   });

@@ -18,6 +18,9 @@
 
   .time {
     font-size: $date-time-font-size-large;
+    position:absolute;
+    right: 50%;
+    padding-right: 10px;
   }
   .day-in-week {
     font-size: $date-time-font-size-small;
