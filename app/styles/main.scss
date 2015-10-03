@@ -2,8 +2,10 @@ $fa-font-path: "../bower_components/font-awesome/fonts";
 $icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/bootstrap/";
 
    
+@import "bootstrap-sass-official/assets/stylesheets/bootstrap/_variables.scss";
 @import "variables";
 @import "tiles";
+@import "dateTime";
 
 // bower:scss
 @import "bootstrap-sass-official/assets/stylesheets/_bootstrap.scss";

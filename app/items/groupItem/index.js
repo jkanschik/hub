@@ -1,2 +1,2 @@
 angular
-  .module('hub.groupItemTile', []);
+  .module('hub.items.groupItem', []);

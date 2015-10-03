@@ -1,6 +1,8 @@
 
 .tile
 {
+  padding: 10px !important;
+
     display:block;
     cursor: pointer;
     -webkit-perspective: 0;
@@ -9,7 +11,6 @@
   float: left;
     min-width: 75px;
     min-height: 75px;
-//  text-align:center;
   opacity:0.75;
   background-color: $tile-bg;
     z-index: 1;
@@ -49,7 +50,6 @@
 .tile .tile-content .tile-icon-large {
     margin-left: 0px;
     vertical-align: middle !important;
-//    text-align: center;
 }
 
 .tile .tile-content
