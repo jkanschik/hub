@@ -7,12 +7,27 @@
  * # hubDateTimeItemTile
  */
 angular.module('hubApp')
-  .directive('hubDateTimeItemTile', function () {
+  .directive('hubDateTimeItemTile', function ($interval) {
     return {
       templateUrl: 'items/dateTimeItem/dateTimeItemTile.html',
-      restrict: 'E'
-//       link: function postLink(scope, element) {
-// //        element.text('this is the hubDateTimeItemTile directive');
-//       }
+      restrict: 'E',
+      link: function postLink(scope, element) {
+        // scope.currentDateTime = new Date();
+
+        var timeoutId;
+
+        function updateTime() {
+          scope.currentDateTime = new Date();
+        }
+        element.on('$destroy', function() {
+          $interval.cancel(timeoutId);
+        });
+
+        // start the UI update process; save the timeoutId for canceling
+        timeoutId = $interval(function() {
+          updateTime(); // update DOM
+        }, 1000);
+
+      }
     };
   });
