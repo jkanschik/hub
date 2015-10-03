@@ -8,9 +8,9 @@ $yellow:                #ffc40d;
 $pink:                  #E671B8;
 $purple:                #7B4F9D;
 $lime:                  #8CBF26;
-$magenta:           #FF0097;
-$teal:            #00ABA9;
-$white:         #FFFFFF;
+$magenta:               #FF0097;
+$teal:                  #00ABA9;
+$white:                 #FFFFFF;
 
 // Flat colors
 // Reference: http://flatuicolors.com/
@@ -36,6 +36,13 @@ $silver:        #bdc3c7;
 $concrete:        #95a5a6;
 $asbestos:        #7f8c8d;
 
+
+
+$body-bg:         #e6e9ef; // from background on ista newsroom
+$text-color:      #3e3e3e;
+$ista-blue-100:   #0a2864; // from navbar on ista.com
+$ista-green-100:  #84b400; // from ista.com
+$ista-light-background: #f6f7fb; // from press contact ista newsroom.
 
 $gray-base:              #000 !default;
 $gray-darker:            lighten($gray-base, 13.5%) !default; // #222
@@ -76,7 +83,7 @@ $border-radius-small:            0px;
 // -------------------------
 
 // Basics of a navbar
-$navbar-default-bg:                $blue;
+$navbar-default-bg:                $ista-blue-100;
 $navbar-default-border:            $blue;
 
 
@@ -141,7 +148,7 @@ $state-danger-border:            darken(adjust-hue($state-danger-bg, -10), 5%) !
 $tile-border:            4px;
 $tile-border-bg:    $white;
 $tile-bg:             $blue;
-$tile-text-color:   $white;
+$tile-text-color:   $text-color;
 
 $tile-success-bg:            $state-success-bg;
 $tile-info-bg:               $state-info-bg;
