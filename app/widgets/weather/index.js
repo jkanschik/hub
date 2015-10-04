@@ -1,2 +1,2 @@
 angular
-  .module('hub.widgets.weather', []);
+  .module('hub.widgets.weather', ['hub.rest']);

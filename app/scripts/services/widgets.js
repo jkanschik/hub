@@ -22,12 +22,12 @@ angular.module('hubApp')
       { type: 'DateTime'
       },
       { type: 'Weather',
-        label: 'Wetter in Essen',
-        itemUID: 'yahooweather:weather:2c0d6cbf'
+        location: 'Essen',
+        thingUID: 'yahooweather:weather:2c0d6cbf'
       },
       { type: 'Weather',
-        label: 'Wetter in Berlin',
-        itemUID: 'yahooweather:weather:berlin'
+        location: 'Berlin',
+        thingUID: 'yahooweather:weather:berlin'
       }
     ]
   });

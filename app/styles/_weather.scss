@@ -1,0 +1,26 @@
+.tile.weather-tile {
+  
+  background: $silver;
+  color: $headings-color;
+  
+  $weather-font-size-small: floor(($font-size-base * 1)) !default; // ~36px
+
+  .weather-location {
+    font-family: $headings-font-family;
+    font-weight: $headings-font-weight;
+    font-size: floor(($font-size-base * 1.6));
+  }
+  .weather-temperature {
+    font-family: $headings-font-family;
+    font-weight: $headings-font-weight;
+    font-size: floor(($font-size-base * 2.5));
+  }
+  .weather-humidity {
+    font-size: $weather-font-size-small;
+    font-weight: lighter;
+  }
+  .weather-pressure {
+    font-size: $weather-font-size-small;
+    font-weight: lighter;
+  }
+}
