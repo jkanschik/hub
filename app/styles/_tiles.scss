@@ -1,39 +1,9 @@
 
-.tile
-{
-  padding: 10px !important;
-
-    display:block;
-    cursor: pointer;
-    -webkit-perspective: 0;
-  -webkit-transform-style: preserve-3d;
-  -webkit-transition: -webkit-transform 0.2s;
-  float: left;
-    min-width: 75px;
-    min-height: 75px;
-  opacity:0.75;
-  background-color: $tile-bg;
-    z-index: 1;
-    border: $tile-border $tile-border-bg solid;
-    color: $tile-text-color;
-
-  h1, h2, h3, h4, h5, h6 { 
-    color: $tile-text-color;
-    -webkit-user-select: none;
-  }
-  h2 { font-size: 1.75em; margin-top: -20px; margin-left:0px; }
-  h3, h4 { margin-top: -15px; }
-  
-  h1.tile-text, h2.tile-text, h3.tile-text, h4.tile-text { margin-top: 20px; }
-
-  a:hover { text-decoration: none; }
-  
+.tile {
+  margin-top:10px;
+  margin-bottom: 10px;
 }
 
-.tile img  
-{
-    border :0;
-}
 .tile:hover 
 { 
     opacity:1;
@@ -63,6 +33,10 @@
 }
 
 
+.tile.tile-white
+{
+    background-color: $white;
+}
 .tile.tile-blue
 {
     background-color: $blue;
@@ -221,20 +195,16 @@ color:#ffffff;
 .tile.tile-small
 {
     height: 70px;
-    width: 70px;
 }
 .tile.tile-medium
 {
     height: 150px;
-    width: 150px;
 }
 .tile.tile-wide, .tile.tile-double
 {
     height: 150px;
-    width: 310px;
 }
 .tile.tile-large
 {
     height: 310px;
-    width: 310px;
 }

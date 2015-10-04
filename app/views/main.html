@@ -2,14 +2,6 @@
   <h1 id="label">{{widget.label}}</h1>
 </div>
 
-<div ng-repeat="widget in widget.widgets">
-  <hub-widget widget="widget"></hub-widget>
-</div>
-
-<div class="col-sm-6 col-md-3">
-  <div class="thumbnail tile tile-medium tile-orange">
-    <a href="#" class="fa-links">
-      <h1>News</h1>
-    </a>
-  </div>
+<div class="row">
+  <hub-widget ng-repeat="widget in widget.widgets" widget="widget"></hub-widget>
 </div>

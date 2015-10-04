@@ -1,6 +1,5 @@
 .tile.date-time-item-tile {
   
-  background: $white;
   color: $headings-color;
   
   font-family: $headings-font-family;
@@ -11,7 +10,7 @@
 
   .date-time-container {
     line-height: 1;
-    margin-top: 30px;
+    padding-top: 30px;
     position: relative;
     height: $date-time-font-size-large;
   }
