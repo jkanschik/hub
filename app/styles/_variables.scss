@@ -41,6 +41,7 @@ $asbestos:        #7f8c8d;
 $body-bg:         #e6e9ef; // from background on ista newsroom
 $text-color:      #3e3e3e;
 $ista-blue-100:   #0a2864; // from navbar on ista.com
+$ista-blue-80:    #6c7ea2; // from navbar on ista.com
 $ista-green-100:  #84b400; // from ista.com
 $ista-light-background: #f6f7fb; // from press contact ista newsroom.
 
@@ -51,8 +52,9 @@ $gray:                   lighten($gray-base, 33.5%) !default; // #555
 $gray-light:             lighten($gray-base, 46.7%) !default; // #777
 $gray-lighter:           lighten($gray-base, 93.5%) !default; // #eee
 
+$brand-primary:         $ista-green-100;
 $brand-success:         $emerald;
-$brand-info:            #6c7ea2; // $peter-river;
+$brand-info:            $peter-river;
 $brand-warning:         $sun-flower;
 $brand-danger:          $alizarin;
 
@@ -71,7 +73,7 @@ $headings-color:          inherit;
 
 $font-size-base:          14px;
 
-
+$font-size-h1:           floor(($font-size-base * 1.7)) !default;
 
 // Components
 // -------------------------

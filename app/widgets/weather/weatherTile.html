@@ -1,16 +1,27 @@
 <div class="col-xs-6 col-sm-3 col-md-3" ng-controller="WeatherTileCtrl">
   <div class="tile tile-medium weather-tile">
-  <div class="weather-location">{{widget.location}}</div>
+    <div class="btn-group btn-group-xs tile-menu">
+      <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+         <span class="caret"></span>
+      </button>
+      <ul class="dropdown-menu">
+        <li><a href="#">Einstellungen</a></li>
+        <li><a href="#">Hilfe</a></li>
+        <li role="separator" class="divider"></li>
+        <li><a href="#">Löschen</a></li>
+      </ul>
+    </div>
 
-  <div class="weather-temperature">
-    {{channelItems.temperature | itemState}}
-  </div>
-  <div class="weather-humidity pull-right" ng-show="channelItems.humidity">
-    {{channelItems.humidity | itemState}}
-  </div>
-  <div class="weather-pressure" ng-show="channelItems.pressure">
-    {{channelItems.pressure | itemState}}
-  </div>
+    <h1>{{widget.location}}</h1>
 
+    <div class="weather-temperature">
+      {{channelItems.temperature | itemState}}
+    </div>
+    <div class="weather-humidity pull-right" ng-show="channelItems.humidity">
+      {{channelItems.humidity | itemState}}
+    </div>
+    <div class="weather-pressure" ng-show="channelItems.pressure">
+      {{channelItems.pressure | itemState}}
+    </div>
   </div>
 </div>
