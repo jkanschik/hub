@@ -6,16 +6,17 @@
  * @description
  * # hubDateTimeItemTile
  */
-angular.module('hubApp')
-  .directive('hubDateTimeItemTile', function ($interval) {
+angular.module('hub.widgets.dateTime')
+  .directive('hubDateTimeTile', function ($interval) {
     return {
-      templateUrl: 'items/dateTimeItem/dateTimeItemTile.html',
+      templateUrl: 'widgets/dateTime/dateTimeTile.html',
       restrict: 'E',
       link: function postLink(scope, element) {
 
         var timeoutId;
 
         function updateTime() {
+          // load from http://localhost:8080/rest/items/Date
           scope.currentDateTime = new Date();
         }
 

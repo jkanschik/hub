@@ -1,9 +1,9 @@
 'use strict';
 
-describe('Directive: hubGroupItemTile', function () {
+describe('Directive: hubGroupTile', function () {
 
   // load the directive's module
-  beforeEach(module('hubApp'));
+  beforeEach(module('hub.widgets.group'));
 
   var element,
     scope;

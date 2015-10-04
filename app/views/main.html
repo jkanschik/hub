@@ -1,6 +1,10 @@
-<hub-group-item-tile></hub-group-item-tile>
-<hub-group-item-tile></hub-group-item-tile>
-<hub-date-time-item-tile></hub-date-time-item-tile>
+<div class="page-header">
+  <h1 id="label">{{widget.label}}</h1>
+</div>
+
+<div ng-repeat="widget in widget.widgets">
+  <hub-widget widget="widget"></hub-widget>
+</div>
 
 <div class="col-sm-6 col-md-3">
   <div class="thumbnail tile tile-medium tile-orange">
@@ -9,4 +13,3 @@
     </a>
   </div>
 </div>
-

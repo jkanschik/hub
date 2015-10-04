@@ -8,10 +8,6 @@
  * Controller of the hubApp
  */
 angular.module('hubApp')
-  .controller('MainCtrl', function () {
-    this.awesomeThings = [
-      'HTML5 Boilerplate',
-      'AngularJS',
-      'Karma'
-    ];
+  .controller('MainCtrl', function ($scope, widgets) {
+    $scope.widget = widgets;
   });
