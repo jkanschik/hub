@@ -24,12 +24,8 @@ body {
   padding: 0;
 }
 
-/* Everything but the jumbotron gets side spacing for mobile first views */
-.header,
-.marketing,
-.footer {
-  padding-left: 15px;
-  padding-right: 15px;
+.navbar {
+  border: 0px;
 }
 
 /* Custom page footer */
@@ -48,12 +44,5 @@ body {
 @media screen and (min-width: 768px) {
   .container {
     max-width: 730px;
-  }
-
-  /* Remove the padding we set earlier */
-  .header,
-  .footer {
-    padding-left: 0;
-    padding-right: 0;
   }
 }

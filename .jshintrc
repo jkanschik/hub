@@ -13,6 +13,7 @@
   "globals": {
     "angular": false,
     "_": false,
-    "sprintf": false
+    "sprintf": false,
+    "EventSource": false
   }
 }

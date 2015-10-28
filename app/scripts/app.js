@@ -34,4 +34,14 @@ angular
       .otherwise({
         redirectTo: '/'
       });
+  })
+  .run(function($rootScope) {
+    var events = new EventSource('/rest/events');
+    events.onmessage = function(event) {
+      var data = JSON.parse(event.data);
+      $rootScope.$broadcast(data.topic, data.object);
+    };
+    events.onerror = function(err) {
+      console.error('Problem with connection to openhab event stream:', err);
+    };
   });

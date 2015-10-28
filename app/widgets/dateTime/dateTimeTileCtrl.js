@@ -8,7 +8,12 @@
  * Controller of the hubApp
  */
 angular.module('hub.widgets.dateTime')
-  .controller('DateTimeTileCtrl', ['$scope', '$interval', function ($scope, $interval) {
+  .controller('DateTimeTileCtrl', function ($scope, $interval) {
+
+    $scope.$on('smarthome/update/Sun_Elevation', function(event, args) {
+      $scope.sunElevation = args;
+    });
+
     var timeoutId;
     function updateTime() {
       // load from http://localhost:8080/rest/items/Date
@@ -26,4 +31,4 @@ angular.module('hub.widgets.dateTime')
 
     updateTime();
 
-  }]);
+  });
