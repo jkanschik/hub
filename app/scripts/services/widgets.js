@@ -11,21 +11,21 @@ angular.module('hubApp')
   .constant('widgets', {
     label: 'Start',
     widgets: [
-      { type: 'Group',
+      { type: 'group',
         label: 'Wohnzimmer',
         widgets: []
       },
-      { type: 'Group',
+      { type: 'group',
         label: 'Schlafzimmer',
         widgets: []
       },
-      { type: 'DateTime'
+      { type: 'dateTime'
       },
-      { type: 'Weather',
+      { type: 'weather',
         location: 'Essen',
         thingUID: 'yahooweather:weather:2c0d6cbf'
       },
-      { type: 'Weather',
+      { type: 'weather',
         location: 'Berlin',
         thingUID: 'yahooweather:weather:berlin'
       }
