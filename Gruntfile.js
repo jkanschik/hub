@@ -369,7 +369,7 @@ module.exports = function (grunt) {
           usemin: 'scripts/scripts.js'
         },
         cwd: '<%= yeoman.app %>',
-        src: 'views/**/*.html',
+        src: ['widgets/**/*.html', 'views/**/*.html'],
         dest: '.tmp/templateCache.js'
       }
     },
@@ -418,6 +418,11 @@ module.exports = function (grunt) {
           expand: true,
           cwd: '.',
           src: 'bower_components/bootstrap-sass-official/assets/fonts/bootstrap/*',
+          dest: '<%= yeoman.dist %>'
+        }, {
+          expand: true,
+          cwd: '.',
+          src: 'bower_components/font-awesome/fonts/fontawesome-webfont.*',
           dest: '<%= yeoman.dist %>'
         }]
       },
